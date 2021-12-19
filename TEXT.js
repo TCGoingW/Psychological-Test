@@ -348,10 +348,10 @@
 //This is where you will define the variables you will be using in your project.
 //#TODO: Create four variables to track each possible quiz outcome
 var questionCount = 0;
-var result1Score = 0;
-var result2Score = 0;
-var result3Score = 0;
-var result4Score = 0;
+var resultEScore = 0;
+var resultIScore = 0;
+// var result3Score = 0;
+// var result4Score = 0;
 
 //#TODO: Use the DOM to create variables for the first quiz question.
 //first question
@@ -382,8 +382,8 @@ var q1a2 = document.getElementById("q1a2");
 // var result = document.getElementById("result");
 
 // //#TODO: Add Event Listeners to your answer choice variables.
-q1a1.addEventListener("click", result1);
-q1a2.addEventListener("click", result2);
+q1a1.addEventListener("click", resultE);
+q1a2.addEventListener("click", resultI);
 // q1a3.addEventListener("click", result3);
 // q1a4.addEventListener("click", result4);
 
@@ -408,37 +408,37 @@ q1a2.addEventListener("click", result2);
 // q5a4.addEventListener("click", result4);
 
 //#TODO: Define quiz functions here
-function result1() {
-    result1Score++, questionCount++;
+function resultE() {
+    resultEScore++, questionCount++;
     //alert("One Point to Gryffindor!");
-    if (questionCount >= 2) {
+    if (questionCount >= 1) {
         updateResult();
     }
 }
-function result2() {
-    result2Score++, questionCount++;
-    if (questionCount >= 5) {
+function resultI() {
+    resultIScore++, questionCount++;
+    if (questionCount >= 1) {
         updateResult();
     }
 }
-function result3() {
-    result3Score++, questionCount++;
-    if (questionCount >= 5) {
-        updateResult();
-    }
-}
-function result4() {
-    result4Score++, questionCount++;
-    if (questionCount >= 5) {
-        updateResult();
-    }
-}
+// function result3() {
+//     result3Score++, questionCount++;
+//     if (questionCount >= 5) {
+//         updateResult();
+//     }
+// }
+// function result4() {
+//     result4Score++, questionCount++;
+//     if (questionCount >= 5) {
+//         updateResult();
+//     }
+// }
 function updateResult() {
-    if (result1Score == 2) {
-        result.innerHTML = "🚀You’ll go to Mars with X Æ A-Xii.";
+    if (resultEScore >= 1) {
+        result.innerHTML = "E";
     }
-    else
+    else if(resultIscore >= 1)
     {
-        result.innerHTML ="B";
+        result.innerHTML ="I";
     }
 }
