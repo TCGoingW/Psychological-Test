@@ -382,8 +382,8 @@ var q1a2 = document.getElementById("q1a2");
 // var result = document.getElementById("result");
 
 // //#TODO: Add Event Listeners to your answer choice variables.
-// q1a1.addEventListener("click", result1);
-// q1a2.addEventListener("click", result2);
+q1a1.addEventListener("click", result1);
+q1a2.addEventListener("click", result2);
 // q1a3.addEventListener("click", result3);
 // q1a4.addEventListener("click", result4);
 
@@ -411,7 +411,7 @@ var q1a2 = document.getElementById("q1a2");
 function result1() {
     result1Score++, questionCount++;
     //alert("One Point to Gryffindor!");
-    if (questionCount >= 1) {
+    if (questionCount >= 2) {
         updateResult();
     }
 }
