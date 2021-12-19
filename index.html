@@ -1,13 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PT</title>
+        <style type="text/css">
 
-<head>
-    <script type="text/javascript" src=TEXT.js'> </script>
-    <title>PSYCHOLOGICAL TEST</title>
-</head>
+	    table { margin-bottom: 30px; }
+        .block {
+            width: 150px;
+            height: 200px;
+            padding: 5px;
+            float: left;
+            /* border-radius */
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            /* box-shadow */
+            -webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+            -moz-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+            box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+            }
 
-<body>
-    <script>range(0, 0, 0)</script>
-</body>
+        .block1 {  background: #00008b;  }
+        .block2 {  background: #228b22;  }
+        .block3 {  background: #ff4040;  }
+        .block4 {  background: #ffd700;  }
+        .block5 {  background: #8b668b;  }
+        .block6 {  background: #8b4513;  }
+        .block7 {  background: #1c1c1c;  }
+        .block0 {  background: #8b8878;  }
 
+        .choices { }
+        .description { font-style: italic; margin-bottom: 10px; margin-left: 20px; }
+	    .instruction { font-family: "Times New Roman"; font-style: italic; font-size: 120%; text-align: center; }
+        </style>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            var x = [];
+            var so = 0;
+            var vk = 0;
+            var numRx = /block(\d)/;
+            var so_interpretacia = ["沒有非生產性的神經精神緊張。主體活躍，他的行為多種多樣，效率高。情緒情緒樂觀。發展意志自我控制。主體的慾望。在適當的動機下，主體能夠工作長時間集中，在極端情況下，他有效調動，專注於任務",
+"一種微不足道的非生產性神經精神緊張。主體以對積極活動的態度為主。他的能量資源或多或少足以應對大多數其他人無法獲得的過度活動和緊張的定期爆發。信息的再現。總的來說，它不為刺激而努力。他從壓力的情況下有尊嚴地走出來。",
+"非生產性神經精神緊張的平均水平。受試者在平均既定要求內處理他的職責。在熟悉的環境中，他從工作切換到休息，反之亦然，從一種活動切換到另一種活動，沒有明顯困難。如有必要，他能夠通過意志力克服疲勞。然而，在此之後，在他的事務和健康上，表現下降的“火車”是可見的。為了保持健康和表現，主體需要相對清晰和主觀的劃分工作和休息時間。",
+"非生產性神經精神緊張程度增加。對象進行有目的活動的潛力非常低。因此，他被迫強迫自己做某些不必要的事情。不斷地進行意志控制會增加過度勞累。同時，這將是不同時期的表現和質量非常不平衡。一般情緒背景的特點是興奮、焦慮、不確定性增加。在壓力大的情況下，活動和行為很可能崩潰。",
+"表現出非生產性的神經精神緊張。受試者非常疲倦。他的注意力很容易被無關的事物分散注意力，而它的特徵是“卡在”情感體驗上。缺乏穩定的動機等級使受試者反應遲鈍，注意力不集中。抑鬱、興奮和無力。在情緒狀態下，焦慮、預感麻煩、無力和缺乏做任何事情的慾望占主導地位。在極端情況下，主體是不可靠的。"];
+            var vk_interpretacia = ["精疲力竭，一種無所作為的態度。長期過度勞累。對困難的被動反應，對壓力的準備不足以及在壓力情況下採取適當的行動是其特徵。需要多樣化和大量的恢復措施。",
+"心態是優化能量消耗。中等需要恢復和休息。能量潛力不高，但在通常平靜的條件下成功活動已經足夠了。在極端情況下，定向和決策的延遲——製作很有可能。",
+"身體和精神資源的最佳調動，積極行動的態度。在極端情況下，最有可能的是快速的定向和決策、權宜之計和行動的成功。",
+"過度興奮，煩躁。興奮程度過高。主體不為事業而做某事，而只是為了釋放自己的事情並不少見。在困難的情況下，很容易形成狂熱的反應：衝動、急躁、自製力下降、輕率動作在極端情況下，動作效率低下，最容易出現恐慌反應，需要採取多樣化的放鬆和鎮靜程序。"];
+            var autnorma = [3, 4, 2, 5, 1, 6, 0, 7]; //red(3),yellow(4),green(2),purple(5),son(1),brown(6),sir(0),black(7)
+	        var instructionString = ["點擊你最喜歡的顏色","剩下的哪個顏色你最喜歡"];
+
+            $('.block').click(function() {
+                $(this).hide(function() {
+                    x.push(parseInt(numRx.exec($(this).attr('class'))[1]));
+                    if (x.length == 1) {
+                        $('p.instruction').remove();
+            $("div.instruction").append("<p class=\"instruction\">"+instructionString[1]+"</p>");
+                    }
+                    if (x.length == 8) {
+                        showchoices();
+                    }
+                });
+            });
+
+            $('#toggle1').click(function() {
+                $('.block').show();
+                x = [];
+                $('p.choices').remove();
+                $('p.instruction').remove();
+                $("div.instruction").append("<p class=\"instruction\">"+instructionString[0]+"</p>");
+            });
+
+            function showchoices() {
+		    $('p.instruction').remove();
+                so = 0;
+                vk = 0;
+                var so_string = "描述";
+                var vk_string = "描述";
+                var i;
+
+                for (i = 0; i < x.length; i++) {
+                    so += Math.abs(autnorma.indexOf(i) - x.indexOf(i));
+                }
+                vk = (18 - x.indexOf(3) - x.indexOf(4) - 2) / (18 - x.indexOf(1) - x.indexOf(2) - 2);
+                vk = Math.round(vk * 10) / 10;
+
+                if (so <= 6) {
+                    so_string = so_interpretacia[0];
+                }
+                else if (so <= 12) {
+                    so_string = so_interpretacia[1];
+                }
+                else if (so <= 20) {
+                    so_string = so_interpretacia[2];
+                }
+                else if (so <= 26) {
+                    so_string = so_interpretacia[3];
+                }
+                else if (so <= 32) {
+                    so_string = so_interpretacia[4];
+                }
+
+                if (vk <= 0.4) {
+                    vk_string = vk_interpretacia[0];
+                }
+                else if (vk <= 0.8) {
+                    vk_string = vk_interpretacia[1];
+                }
+                else if (vk <= 1.9) {
+                    vk_string = vk_interpretacia[2];
+                }
+                else if (vk <= 5) {
+                    vk_string = vk_interpretacia[3];
+                }
+
+                $("div.choices").append("<p class=\"choices\">顏色選擇：" + x.join("-") + "</p>");
+                $("div.choices").append("<p class=\"choices\">總偏差: " + so + "</p>");
+                $("div.choices").append("<p class=\"choices description\">   " + so_string + "</p>");
+                $("div.choices").append("<p class=\"choices\">營養系數: " + vk + "</p>");
+                $("div.choices").append("<p class=\"choices description\">   " + vk_string + "</p>");
+            }
+        });
+        </script>
+    </head>
+    <body>
+	<div class="choices"></div>
+	<div align="center">
+    <div class="instruction"><p class="instruction">點擊你最喜歡的顏色</p></div>
+        <table>
+            <tr>
+                <td><div class="block1 block"></div></td>
+                <td><div class="block2 block"></div></td>
+                <td><div class="block3 block"></div></td>
+                <td><div class="block4 block"></div></td>
+            </tr>
+            <tr>
+                <td><div class="block5 block"></div></td>
+                <td><div class="block6 block"></div></td>
+                <td><div class="block7 block"></div></td>
+                <td><div class="block0 block"></div></td>
+            </tr>
+        </table>
+        <input type="submit" name="toggle1" value="重來!" id="toggle1" />
+	</div>
+    </body>
 </html>
