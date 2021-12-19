@@ -410,7 +410,6 @@ q1a2.addEventListener("click", resultI);
 //#TODO: Define quiz functions here
 function resultE() {
     resultEScore++, questionCount++;
-    //alert("One Point to Gryffindor!");
     if (questionCount >= 1) {
         updateResult();
     }
@@ -439,6 +438,6 @@ function updateResult() {
     }
     else if(resultIScore >= 1)
     {
-        result.innerHTML ="I";
+        result.innerHTML = "I";
     }
 }
