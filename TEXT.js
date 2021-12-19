@@ -462,8 +462,8 @@ function updateResult() {
     if (resultEScore >= 0) {
         result.innerHTML = "E";
     }
-    // else if(resultIScore >= 0)
-    // {
-    //     result.innerHTML = "I";
-    // }
+    else if(resultIScore >= 0)
+    {
+        result.innerHTML = "I";
+    }
 }
