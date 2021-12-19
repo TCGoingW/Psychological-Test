@@ -459,11 +459,11 @@ function resultI() {
 //     }
 // }
 function updateResult() {
-    if (resultEScore >= 1) {
+    if (resultEScore >= 0) {
         result.innerHTML = "E";
     }
-    else if(resultIScore >= 1)
-    {
-        result.innerHTML = "I";
-    }
+    // else if(resultIScore >= 0)
+    // {
+    //     result.innerHTML = "I";
+    // }
 }
