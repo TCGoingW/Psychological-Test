@@ -1,20 +1,43 @@
-<!-- <html lang="en">
+<!-- <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <script > </script>
+    <script>
+        function prt() {
+            TESTS.questions.question
+        }
+        var TESTS = [
+            {
+                questions: [
+                    {
+                        which: "EI",
+                        question: '初次结识的朋友面前我是？',
+                        answers: [
+                            {
+                                type: "E",
+                                score: 2,
+                                content: '通常我先说话。'
+                            },
+                            {
+                                type: "I",
+                                score: 5,
+                                content: '通常对方先说话。'
+                            },
+                        ],
+                    },
+                ]
+            }
+        ]
+    </script>
     <title>PSYCHOLOGICAL TEST</title>
 </head>
 
 <body>
-    <p>D</p>
-    <script type="text/javascript" src=./TEXT.js></script>
-    <script>
-        
-
-    </script>
+    <button onclick="document.load"></button>
 </body>
 
 </html> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,6 +57,7 @@
 
     <!-- import the webpage's javascript file -->
     <script src="TEXT.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </head>
 
 <body>
@@ -43,7 +67,7 @@
     </h2>
     <div class="question">
         <div class="answer-choice">
-            <button class="button" id="q1a1">通常我先说话。</button>
+            <button class="button" id="q1a1" onclick="$(this).attr('disabled', true);">通常我先说话。</button>
         </div>
         <div class="answer-choice">
             <button class="button" id="q1a2">通常我先说话。</button>
@@ -55,27 +79,21 @@
     </h2>
     <div class="question">
         <div class="answer-choice">
-
             <button class="button" id="q2a1">Milk tea w/ pearls</button>
         </div>
         <div class="answer-choice">
-
             <button class="button" id="q2a2">Milk tea w/o pearls</button>
         </div>
         <div class="answer-choice">
-
             <button class="button" id="q2a3">Fruit tea</button>
         </div>
         <div class="answer-choice">
-
             <button class="button" id="q2a4">Water, beacause I'm a coffee person</button>
         </div>
     </div>
-
     <h2>
         <span style="background-color: #FFFF00">What is your favorite subject in school?</span>
     </h2>
-
     <div class="question">
         <div class="answer-choice">
             <button class="button" id="q3a1">Science</button>
@@ -90,9 +108,7 @@
             <button class="button" id="q3a4">Art</button>
         </div>
     </div>
-
     <h2><span style="background-color: #FFFF00">Favorite Direction?</span></h2>
-
     <div class="question">
         <div class="answer-choice">
             <button class="button" id="q4a1">North</button>
@@ -107,11 +123,9 @@
             <button class="button" id="q4a4">One</button>
         </div>
     </div>
-
     <h2>
         <span style="background-color: #FFFF00">Preferred genre of music?</span>
     </h2>
-
     <div class="question">
         <div class="answer-choice">
             <button class="button" id="q5a1">Pop (includes K-Pop)</button>

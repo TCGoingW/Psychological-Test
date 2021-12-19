@@ -347,6 +347,28 @@
 //Global Variables
 //This is where you will define the variables you will be using in your project.
 //#TODO: Create four variables to track each possible quiz outcome
+// var TESTS = [
+//     {
+//         questions :[
+//         {
+//             which:"EI",
+//             question: '初次结识的朋友面前我是？',
+//             answers:[
+//                 {
+//                     type: "E",
+//                     score: 2,
+//                     content: '通常我先说话。'
+//                 },
+//                 {
+//                     type: "I",
+//                     score: 5,
+//                     content: '通常对方先说话。'
+//                 },
+//             ],
+//         },
+//     }
+// ]
+
 var questionCount = 0;
 var resultEScore = 0;
 var resultIScore = 0;
@@ -408,6 +430,12 @@ q1a2.addEventListener("click", resultI);
 // q5a4.addEventListener("click", result4);
 
 //#TODO: Define quiz functions here
+function setDisabled() {
+    document.getElementById('send').disabled = false;
+}
+    
+    
+
 function resultE() {
     resultEScore++, questionCount++;
     if (questionCount >= 1) {
