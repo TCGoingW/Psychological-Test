@@ -437,7 +437,7 @@ function updateResult() {
     if (resultEScore >= 1) {
         result.innerHTML = "E";
     }
-    else if(resultIscore >= 1)
+    else if(resultIScore >= 1)
     {
         result.innerHTML ="I";
     }
