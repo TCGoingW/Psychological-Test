@@ -433,8 +433,6 @@ q1a2.addEventListener("click", resultI);
 function setDisabled() {
     document.getElementById('send').disabled = false;
 }
-    
-    
 
 function resultE() {
     resultEScore++, questionCount++;
