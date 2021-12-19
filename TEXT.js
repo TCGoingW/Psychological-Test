@@ -431,7 +431,7 @@ q1a2.addEventListener("click", resultI);
 
 //#TODO: Define quiz functions here
 function setDisabled() {
-    document.getElementsByClassName('button1').disabled = false;
+    document.getElementsByClass("button1").disabled = false;
 }
 
 function resultE() {
