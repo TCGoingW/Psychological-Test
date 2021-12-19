@@ -459,10 +459,10 @@ function resultI() {
 //     }
 // }
 function updateResult() {
-    if (resultEScore >= 0) {
+    if (resultEScore >= 1) {
         result.innerHTML = "E";
     }
-    else if(resultIScore >= 0)
+    else if(resultIScore >= 1)
     {
         result.innerHTML = "I";
     }
