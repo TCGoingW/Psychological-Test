@@ -430,6 +430,9 @@ q1a2.addEventListener("click", resultI);
 // q5a4.addEventListener("click", result4);
 
 //#TODO: Define quiz functions here
+function q1Over(){
+    $("#question1").css("display", "none");
+}
 function setDisabled() {
     document.getElementById('send').disabled = false;   
 }
