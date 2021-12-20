@@ -382,8 +382,8 @@ var ansString = '';
 var q1a1 = document.getElementById("q1a1");
 var q1a2 = document.getElementById("q1a2");
 // //second question
-// var q2a1 = document.getElementById("q2a1");
-// var q2a2 = document.getElementById("q2a2");
+var q2a1 = document.getElementById("q2a1");
+var q2a2 = document.getElementById("q2a2");
 // var q2a3 = document.getElementById("q2a3");
 // var q2a4 = document.getElementById("q2a4");
 // //third question
@@ -406,13 +406,9 @@ var q1a2 = document.getElementById("q1a2");
 // //#TODO: Add Event Listeners to your answer choice variables.
 q1a1.addEventListener("click", resultE);
 q1a2.addEventListener("click", resultI);
-// q1a3.addEventListener("click", result3);
-// q1a4.addEventListener("click", result4);
 
-// q2a1.addEventListener("click", result1);
-// q2a2.addEventListener("click", result2);
-// q2a3.addEventListener("click", result3);
-// q2a4.addEventListener("click", result4);
+q2a1.addEventListener("click", resultS);
+q2a2.addEventListener("click", resultN);
 
 // q3a1.addEventListener("click", result1);
 // q3a2.addEventListener("click", result2);
@@ -446,18 +442,15 @@ function resultI() {
     ansArray[1]++;
     updateResult();
 }
-// function result3() {
-//     result3Score++, questionCount++;
-//     if (questionCount >= 5) {
-//         updateResult();
-//     }
-// }
-// function result4() {
-//     result4Score++, questionCount++;
-//     if (questionCount >= 5) {
-//         updateResult();
-//     }
-// }
+function resultS() {
+    ansArray[2]++;
+    updateResult();
+}
+function resultN() {
+    ansArray[3]++;
+    updateResult();
+}
+
 function updateResult() {
     // if (resultEScore >= 1) {
     //     result.innerHTML = "E";
