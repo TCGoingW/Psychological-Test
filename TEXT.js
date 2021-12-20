@@ -463,13 +463,6 @@ function resultN() {
 
 
 function updateResult() {
-    // if (resultEScore >= 1) {
-    //     result.innerHTML = "E";
-    // }
-    // else if (resultIScore >= 1)
-    // {
-    //     result.innerHTML = "I";
-    // }
     for(i = 0; i < ansArray.length; ++i)
     {
         ansString = ansString + ansArray[i];
