@@ -432,7 +432,6 @@ function resultE() {
     //     updateResult();
     // }
     ansArray[0]++;
-    updateResult();
 }
 function resultI() {
     // resultIScore++, questionCount++;
@@ -440,30 +439,20 @@ function resultI() {
     //     updateResult();
     // }
     ansArray[1]++;
-    updateResult();
 }
 function resultS() {
     ansArray[2]++;
-    updateResult();
 }
 function resultN() {
     ansArray[3]++;
-    updateResult();
 }
 
-function updateResult() {
-    // if (resultEScore >= 1) {
-    //     result.innerHTML = "E";
-    // }
-    // else if (resultIScore >= 1)
-    // {
-    //     result.innerHTML = "I";
-    // }
+function resultFinal()
+{
     for(i = 0; i < ansArray.length; ++i)
     {
         ansString = ansString + ansArray[i];
     }
-    window.alert(ansString);
     console.log(ansString);
     result.innerHTML = ansString;
 }
