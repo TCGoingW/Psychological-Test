@@ -433,6 +433,7 @@ q1a2.addEventListener("click", resultI);
 function q1Over(){
     $("#question1").css("display", "none");
 }
+
 function setDisabled() {
     document.getElementById('send').disabled = false;   
 }
