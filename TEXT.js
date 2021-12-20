@@ -347,33 +347,9 @@
 //Global Variables
 //This is where you will define the variables you will be using in your project.
 //#TODO: Create four variables to track each possible quiz outcome
-// var TESTS = [
-//     {
-//         questions :[
-//         {
-//             which:"EI",
-//             question: '初次结识的朋友面前我是？',
-//             answers:[
-//                 {
-//                     type: "E",
-//                     score: 2,
-//                     content: '通常我先说话。'
-//                 },
-//                 {
-//                     type: "I",
-//                     score: 5,
-//                     content: '通常对方先说话。'
-//                 },
-//             ],
-//         },
-//     }
-// ]
-
 var questionCount = 0;
 var ansArray = [0, 0, 0, 0, 0, 0, 0, 0]; //E, I, S, N, T, F, J, P
 var ansString = '';
-// var result3Score = 0;
-// var result4Score = 0;
 
 //#TODO: Use the DOM to create variables for the first quiz question.
 //first question
@@ -382,18 +358,12 @@ var q1a2 = document.getElementById("q1a2");
 // //second question
 var q2a1 = document.getElementById("q2a1");
 var q2a2 = document.getElementById("q2a2");
-// var q2a3 = document.getElementById("q2a3");
-// var q2a4 = document.getElementById("q2a4");
 // //third question
-// var q3a1 = document.getElementById("q3a1");
-// var q3a2 = document.getElementById("q3a2");
-// var q3a3 = document.getElementById("q3a3");
-// var q3a4 = document.getElementById("q3a4");
+var q3a1 = document.getElementById("q3a1");
+var q3a2 = document.getElementById("q3a2");
 // //fourth question
-// var q4a1 = document.getElementById("q4a1");
-// var q4a2 = document.getElementById("q4a2");
-// var q4a3 = document.getElementById("q4a3");
-// var q4a4 = document.getElementById("q4a4");
+var q4a1 = document.getElementById("q4a1");
+var q4a2 = document.getElementById("q4a2");
 // //fifty question
 // var q5a1 = document.getElementById("q5a1");
 // var q5a2 = document.getElementById("q5a2");
@@ -408,20 +378,11 @@ q1a2.addEventListener("click", resultI);
 q2a1.addEventListener("click", resultS);
 q2a2.addEventListener("click", resultN);
 
-// q3a1.addEventListener("click", result1);
-// q3a2.addEventListener("click", result2);
-// q3a3.addEventListener("click", result3);
-// q3a4.addEventListener("click", result4);
+q3a1.addEventListener("click", resultT);
+q3a2.addEventListener("click", resultF);
 
-// q4a1.addEventListener("click", result1);
-// q4a2.addEventListener("click", result2);
-// q4a3.addEventListener("click", result3);
-// q4a4.addEventListener("click", result4);
-
-// q5a1.addEventListener("click", result1);
-// q5a2.addEventListener("click", result2);
-// q5a3.addEventListener("click", result3);
-// q5a4.addEventListener("click", result4);
+q4a1.addEventListener("click", resultJ);
+q4a2.addEventListener("click", resultP);
 
 //#TODO: Define quiz functions here
 function resultE() {
@@ -431,36 +392,59 @@ function resultE() {
     // }
     ansArray[0]++;
     questionCount++;
-    if (questionCount >= 2) {
+    if (questionCount >= 4) {
         updateResult();
     }
 }
 function resultI() {
-    // resultIScore++, questionCount++;
-    // if (questionCount >= 1) {
-    //     updateResult();
-    // }
     ansArray[1]++;
     questionCount++;
-    if (questionCount >= 2) {
+    if (questionCount >= 4) {
         updateResult();
     }
 }
 function resultS() {
     ansArray[2]++;
     questionCount++;
-    if (questionCount >= 2) {
+    if (questionCount >= 4) {
         updateResult();
     }
 }
 function resultN() {
     ansArray[3]++;
     questionCount++;
-    if (questionCount >= 2) {
+    if (questionCount >= 4) {
         updateResult();
     }
 }
-
+function resultT() {
+    ansArray[4]++;
+    questionCount++;
+    if (questionCount >= 4) {
+        updateResult();
+    }
+}
+function resultF() {
+    ansArray[5]++;
+    questionCount++;
+    if (questionCount >= 4) {
+        updateResult();
+    }
+}
+function resultJ() {
+    ansArray[6]++;
+    questionCount++;
+    if (questionCount >= 4) {
+        updateResult();
+    }
+}
+function resultP() {
+    ansArray[7]++;
+    questionCount++;
+    if (questionCount >= 4) {
+        updateResult();
+    }
+}
 
 function updateResult() {
     for(i = 0; i < ansArray.length; ++i)

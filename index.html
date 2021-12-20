@@ -76,6 +76,14 @@
         }
         function q2Over(){
             $(".question2").css("display", "none");
+            $(".question3").css("display", "block");
+        }
+        function q3Over(){
+            $(".question3").css("display", "none");
+            $(".question4").css("display", "block");
+        }
+        function q4Over(){
+            $(".question4").css("display", "none");
         }
     </script>
     
@@ -95,13 +103,37 @@
     
     <div class="question2" id="question2" style="display:none">
         <h2>
-            <span style="background-color: #FFFF00">周末我会？</span>
+            <span style="background-color: #FFFF00">我认为更重要的是？</span>
         </h2>
         <div class="answer-choice">
-            <button class="button" id="q2a1" onclick="q2Over()">喜欢和其他人见面。</button>
+            <button class="button" id="q2a1" onclick="q2Over()">没有现在就意味着没有未来。</button>
         </div>
         <div class="answer-choice">
-            <button class="button" id="q2a2" onclick="q2Over()">并不介意独自度过。</button>
+            <button class="button" id="q2a2" onclick="q2Over()">不考虑未来的话就不会有进步。</button>
+        </div>
+    </div>
+
+    <div class="question3" id="question3" style="display:none">
+        <h2>
+            <span style="background-color: #FFFF00">遇到必须拒绝的情况时，我会？</span>
+        </h2>
+        <div class="answer-choice">
+            <button class="button" id="q3a1" onclick="q3Over()">直接了当地拒绝。</button>
+        </div>
+        <div class="answer-choice">
+            <button class="button" id="q3a2" onclick="q3Over()">深思熟虑后也往往会顺从。</button>
+        </div>
+    </div>
+
+    <div class="question4" id="question4" style="display:none">
+        <h2>
+            <span style="background-color: #FFFF00">做准备工作时的我会？</span>
+        </h2>
+        <div class="answer-choice">
+            <button class="button" id="q4a1" onclick="q4Over()">提前一天做好准备。</button>
+        </div>
+        <div class="answer-choice">
+            <button class="button" id="q4a2" onclick="q4Over()">总想着‘明天再说明天再说’，经常忘记。</button>
         </div>
     </div>
 
