@@ -72,18 +72,35 @@
     <script>
         function q1Over(){
             $(".question1").css("display", "none");
+            $(".question2").css("display", "block");
+        }
+        function q2Over(){
+            $(".question2").css("display", "none");
         }
     </script>
+    
     <h1>做出你的選擇</h1>
     <div class="question1" id="question1">
         <h2>
             <span style="background-color: #FFFF00">初次结识的朋友面前我是嗎？</span>
         </h2>
         <div class="answer-choice">
-            <button class="button1" id="q1a1" onclick="q1Over()">通常我先A说话。</button>
+            <button class="button" id="q1a1" onclick="q1Over()">通常我先A说话。</button>
         </div>
         <div class="answer-choice">
-            <button class="button1" id="q1a2" onclick="$('.button1').attr('disabled', true);">通常我先说话CS。</button>
+            <button class="button" id="q1a2" onclick="q1Over()">通常对方先说话。</button>
+        </div>
+    </div>
+    
+    <div class="question2" id="question2" style="display:none">
+        <h2>
+            <span style="background-color: #FFFF00">周末我会？</span>
+        </h2>
+        <div class="answer-choice">
+            <button class="button" id="q2a1" onclick="q2Over()">喜欢和其他人见面。</button>
+        </div>
+        <div class="answer-choice">
+            <button class="button" id="q2a2" onclick="q2Over()">并不介意独自度过。</button>
         </div>
     </div>
 
