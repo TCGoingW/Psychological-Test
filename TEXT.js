@@ -431,7 +431,8 @@ q1a2.addEventListener("click", resultI);
 
 //#TODO: Define quiz functions here
 function setDisabled() {
-    document.getElementById('send').disabled = false;
+    // document.getElementById('send').disabled = false;
+    document.getElementsByClassName('button').disabled = false;
 }
 
 function resultE() {
@@ -462,7 +463,7 @@ function updateResult() {
     if (resultEScore >= 1) {
         result.innerHTML = "E";
     }
-    if (resultIScore >= 1)
+    else if (resultIScore >= 1)
     {
         result.innerHTML = "I";
     }

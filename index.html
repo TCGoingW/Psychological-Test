@@ -67,10 +67,10 @@
     </h2>
     <div class="question">
         <div class="answer-choice">
-            <button class="button1" id="q1a1" >通常我先说话。</button>
+            <button class="button1" id="q1a1" onclick="setDisabled()">通常我先说话。</button>
         </div>
         <div class="answer-choice">
-            <button class="button1" id="q1a2" >通常我先说话CS。</button>
+            <button class="button1" id="q1a2" onclick="$('.button1').attr('disabled', true);">通常我先说话CS。</button>
         </div>
     </div>
 
@@ -145,6 +145,7 @@
     <div class="result">
         <h3 id="result">Your result is...</h3>
     </div>
+    <script src="TEXT.js"></script>
 </body>
 
 </html>
