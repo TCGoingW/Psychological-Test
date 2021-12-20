@@ -463,6 +463,7 @@ function updateResult() {
     {
         ansString = ansString + ansArray[i];
     }
+    window.alert(ansString);
     console.log(ansString);
     result.innerHTML = ansString;
 }
