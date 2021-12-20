@@ -370,8 +370,6 @@
 // ]
 
 var questionCount = 0;
-var resultEScore = 0;
-var resultIScore = 0;
 var ansArray = [0, 0, 0, 0, 0, 0, 0, 0]; //E, I, S, N, T, F, J, P
 var ansString = '';
 // var result3Score = 0;
@@ -432,6 +430,10 @@ function resultE() {
     //     updateResult();
     // }
     ansArray[0]++;
+    questionCount++;
+    if (questionCount >= 2) {
+        updateResult();
+    }
 }
 function resultI() {
     // resultIScore++, questionCount++;
@@ -439,16 +441,35 @@ function resultI() {
     //     updateResult();
     // }
     ansArray[1]++;
+    questionCount++;
+    if (questionCount >= 2) {
+        updateResult();
+    }
 }
 function resultS() {
     ansArray[2]++;
+    questionCount++;
+    if (questionCount >= 2) {
+        updateResult();
+    }
 }
 function resultN() {
     ansArray[3]++;
+    questionCount++;
+    if (questionCount >= 2) {
+        updateResult();
+    }
 }
 
-function resultFinal()
-{
+
+function updateResult() {
+    // if (resultEScore >= 1) {
+    //     result.innerHTML = "E";
+    // }
+    // else if (resultIScore >= 1)
+    // {
+    //     result.innerHTML = "I";
+    // }
     for(i = 0; i < ansArray.length; ++i)
     {
         ansString = ansString + ansArray[i];
