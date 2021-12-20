@@ -372,6 +372,8 @@
 var questionCount = 0;
 var resultEScore = 0;
 var resultIScore = 0;
+var ansArray = [0, 0, 0, 0, 0, 0, 0, 0]; //E, I, S, N, T, F, J, P
+var ansString = '';
 // var result3Score = 0;
 // var result4Score = 0;
 
@@ -379,8 +381,6 @@ var resultIScore = 0;
 //first question
 var q1a1 = document.getElementById("q1a1");
 var q1a2 = document.getElementById("q1a2");
-// var q1a3 = document.getElementById("q1a3");
-// var q1a4 = document.getElementById("q1a4");
 // //second question
 // var q2a1 = document.getElementById("q2a1");
 // var q2a2 = document.getElementById("q2a2");
@@ -431,16 +431,20 @@ q1a2.addEventListener("click", resultI);
 
 //#TODO: Define quiz functions here
 function resultE() {
-    resultEScore++, questionCount++;
-    if (questionCount >= 1) {
-        updateResult();
-    }
+    // resultEScore++, questionCount++;
+    // if (questionCount >= 1) {
+    //     updateResult();
+    // }
+    ansArray[0]++;
+    updateResult();
 }
 function resultI() {
-    resultIScore++, questionCount++;
-    if (questionCount >= 1) {
-        updateResult();
-    }
+    // resultIScore++, questionCount++;
+    // if (questionCount >= 1) {
+    //     updateResult();
+    // }
+    ansArray[1]++;
+    updateResult();
 }
 // function result3() {
 //     result3Score++, questionCount++;
@@ -455,11 +459,17 @@ function resultI() {
 //     }
 // }
 function updateResult() {
-    if (resultEScore >= 1) {
-        result.innerHTML = "E";
-    }
-    else if (resultIScore >= 1)
+    // if (resultEScore >= 1) {
+    //     result.innerHTML = "E";
+    // }
+    // else if (resultIScore >= 1)
+    // {
+    //     result.innerHTML = "I";
+    // }
+    for(i = 0; i < ansArray.length; ++i)
     {
-        result.innerHTML = "I";
+        ansString = ansString + ansArray[i];
     }
+    console.log(ansString);
+    result.innerHTML = ansString;
 }
