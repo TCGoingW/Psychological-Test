@@ -353,10 +353,10 @@ var ansString = '';
 //var ansArray = new Map(['E', 0],['I', 0],['S', 0],['N', 0],['T', 0],['F', 0],['J', 0],['P', 0]);
 var numTrans = ["E", "I", "S", "N", "T", "F", "J", "P"];
 var colorTransMap = new Map([
-    ["ESTJ", "cactus"],["ESTP", "rose bud"],["ESFJ", "vanilla ice"],["ESFP", "sweet pink"],
-    ["ENTJ", "navy fiony"],["ENTP", "warm flame"],["ENFJ", "doeny"],["ENFP", "dandelion"],
-    ["ISTJ", "periglacial blue"],["ISTP", "ocean depths"],["ISFJ", "oasis"],["ISFP", "sprout"],
-    ["INTJ", "quartz"],["INTP", "serulian"],["INFJ", "alice blue"],["INFP", "ocean bay"]
+    ["ESTJ", "墨綠 奇異果汁"],["ESTP", "橘 波蜜"],["ESFJ", "金 啤酒或維他露P"],["ESFP", "粉 草莓牛奶"],
+    ["ENTJ", "紫 火龍果汁"],["ENTP", "紅 蔓越莓汁"],["ENFJ", "藏青 抹茶"],["ENFP", "白金 豆漿"],
+    ["ISTJ", "綠 青茶"],["ISTP", "深藍 葡萄柚綠茶"],["ISFJ", "白 香草奶昔"],["ISFP", "嫩芽綠 無糖綠茶"],
+    ["INTJ", "灰 芝麻"],["INTP", "籃紫色 蝶豆花"],["INFJ", "淺咖啡 奶茶"],["INFP", "海洋藍"]
 ]);
 
 //#TODO: Use the DOM to create variables for the first quiz question.
