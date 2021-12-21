@@ -375,9 +375,6 @@ var q4a2 = document.getElementById("q4a2");
 // //fifty question
 // var q5a1 = document.getElementById("q5a1");
 // var q5a2 = document.getElementById("q5a2");
-// var q5a3 = document.getElementById("q5a3");
-// var q5a4 = document.getElementById("q5a4");
-// var result = document.getElementById("result");
 
 // //#TODO: Add Event Listeners to your answer choice variables.
 q1a1.addEventListener("click", resultE);
@@ -394,11 +391,6 @@ q4a2.addEventListener("click", resultP);
 
 //#TODO: Define quiz functions here
 function resultE() {
-    // resultEScore++, questionCount++;
-    // if (questionCount >= 1) {
-    //     updateResult();
-    // }
-    
     ansArray[0]++;
     questionCount++;
     if (questionCount >= 4) {
@@ -471,5 +463,5 @@ function updateResult() {
     }
     console.log(ansString);
     console.log(colorTransMap.get(ansString));
-    result.innerHTML = ansString;
+    result.innerHTML = ansString + colorTransMap.get(ansString);
 }
