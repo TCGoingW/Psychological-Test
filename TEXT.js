@@ -470,5 +470,6 @@ function updateResult() {
         }
     }
     console.log(ansString);
+    console.log(colorTransMap.get(ansString));
     result.innerHTML = ansString;
 }
