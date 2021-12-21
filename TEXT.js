@@ -348,8 +348,16 @@
 //This is where you will define the variables you will be using in your project.
 //#TODO: Create four variables to track each possible quiz outcome
 var questionCount = 0;
-var ansArray = [0, 0, 0, 0, 0, 0, 0, 0]; //E, I, S, N, T, F, J, P
+var ansArray = [0, 0, 0, 0, 0, 0, 0, 0]; //E外向, I內向, S實感, N直覺, T思考, F情感, J判斷, P感知
 var ansString = '';
+//var ansArray = new Map(['E', 0],['I', 0],['S', 0],['N', 0],['T', 0],['F', 0],['J', 0],['P', 0]);
+var numTrans = ['E', 'I', 'S', 'N', 'T', 'F', 'J', 'P'];
+var colorTransMap = new Map([
+    ["ESTJ", "cactus"],["ESTP", "rose bud"],["ESFJ", "vanilla ice"],["ESFP", "sweet pink"],
+    ["ENTJ", "navy fiony"],["ENTP", "warm flame"],["ENFJ", "doeny"],["ENFP", "dandelion"],
+    ["ISTJ", "periglacial blue"],["ISTP", "ocean depths"],["ISFJ", "oasis"],["ISFP", "sprout"],
+    ["INTJ", "quartz"],["INTP", "serulian"],["INFJ", "alice blue"],["INFP", "ocean bay"]
+]);
 
 //#TODO: Use the DOM to create variables for the first quiz question.
 //first question
@@ -390,6 +398,7 @@ function resultE() {
     // if (questionCount >= 1) {
     //     updateResult();
     // }
+    
     ansArray[0]++;
     questionCount++;
     if (questionCount >= 4) {
@@ -452,5 +461,19 @@ function updateResult() {
         ansString = ansString + ansArray[i];
     }
     console.log(ansString);
+    ansString = '';
+    //must be odd questions
+    for(i = 0; i < ansArray.length; i+=2)
+    {
+        if(ansArray[i] > ansArray[i + 1])
+        {
+            ansString = ansString + numTrans[i];
+        }
+        else(ansArray[i] < ansArray[i + 1])
+        {
+            ansString = ansString + numTrans[i + 1];
+        }
+        console.log(ansString);
+    }
     result.innerHTML = ansString;
 }
