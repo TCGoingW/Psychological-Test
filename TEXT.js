@@ -456,14 +456,7 @@ function resultP() {
 }
 
 function updateResult() {
-    window.alert("done");
-    // for(i = 0; i < ansArray.length; ++i)
-    // {
-    //     ansString = ansString + ansArray[i];
-    // }
-    // console.log(ansString);
     //must be odd questions
-    
     for(i = 0; i < ansArray.length; i+=2)
     {
         if(ansArray[i] > ansArray[i + 1])
@@ -474,8 +467,7 @@ function updateResult() {
         {
             ansString = ansString + numTrans[i + 1];
         }
-        console.log(ansString);
     }
-    console.log("last" + ansString);
+    console.log(ansString);
     result.innerHTML = ansString;
 }
