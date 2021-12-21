@@ -466,7 +466,6 @@ function updateResult() {
     
     for(i = 0; i < ansArray.length; i+=2)
     {
-        window.alert(i);
         if(ansArray[i] > ansArray[i + 1])
         {
             ansString = ansString + numTrans[i];
@@ -475,7 +474,8 @@ function updateResult() {
         {
             ansString = ansString + numTrans[i + 1];
         }
+        console.log(ansString);
     }
-    console.log(ansString);
+    console.log("last" + ansString);
     result.innerHTML = ansString;
 }
