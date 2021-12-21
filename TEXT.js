@@ -455,6 +455,7 @@ function resultP() {
     }
 }
 
+
 function updateResult() {
     //must be odd questions
     for(i = 0; i < ansArray.length; i+=2)
