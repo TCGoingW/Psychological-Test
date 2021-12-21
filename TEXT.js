@@ -456,11 +456,11 @@ function resultP() {
 }
 
 function updateResult() {
-    for(i = 0; i < ansArray.length; ++i)
-    {
-        ansString = ansString + ansArray[i];
-    }
-    console.log(ansString);
+    // for(i = 0; i < ansArray.length; ++i)
+    // {
+    //     ansString = ansString + ansArray[i];
+    // }
+    // console.log(ansString);
     ansString = '';
     //must be odd questions
     for(i = 0; i < ansArray.length; i+=2)
@@ -473,7 +473,7 @@ function updateResult() {
         {
             ansString = ansString + numTrans[i + 1];
         }
-        console.log(ansString);
     }
+    console.log(ansString);
     result.innerHTML = ansString;
 }
