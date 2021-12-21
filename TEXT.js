@@ -351,7 +351,7 @@ var questionCount = 0;
 var ansArray = [0, 0, 0, 0, 0, 0, 0, 0]; //E外向, I內向, S實感, N直覺, T思考, F情感, J判斷, P感知
 var ansString = '';
 //var ansArray = new Map(['E', 0],['I', 0],['S', 0],['N', 0],['T', 0],['F', 0],['J', 0],['P', 0]);
-var numTrans = ['E', 'I', 'S', 'N', 'T', 'F', 'J', 'P'];
+var numTrans = ["E", "I", "S", "N", "T", "F", "J", "P"];
 var colorTransMap = new Map([
     ["ESTJ", "cactus"],["ESTP", "rose bud"],["ESFJ", "vanilla ice"],["ESFP", "sweet pink"],
     ["ENTJ", "navy fiony"],["ENTP", "warm flame"],["ENFJ", "doeny"],["ENFP", "dandelion"],
@@ -461,8 +461,8 @@ function updateResult() {
     //     ansString = ansString + ansArray[i];
     // }
     // console.log(ansString);
-    ansString = '';
     //must be odd questions
+    window.alert("done");
     for(i = 0; i < ansArray.length; i+=2)
     {
         if(ansArray[i] > ansArray[i + 1])
