@@ -463,5 +463,6 @@ function updateResult() {
     }
     console.log(ansString);
     console.log(colorTransMap.get(ansString));
-    result.innerHTML = ansString + colorTransMap.get(ansString);
+    result.innerHTML = ansString;
+    color.innerHTML = colorTransMap.get(ansString);
 }
