@@ -457,24 +457,25 @@ function resultP() {
 
 function updateResult() {
     window.alert("done");
-    for(i = 0; i < ansArray.length; ++i)
-    {
-        ansString = ansString + ansArray[i];
-    }
-    console.log(ansString);
+    // for(i = 0; i < ansArray.length; ++i)
+    // {
+    //     ansString = ansString + ansArray[i];
+    // }
+    // console.log(ansString);
     //must be odd questions
     
-    // for(i = 0; i < ansArray.length; i+=2)
-    // {
-    //     if(ansArray[i] > ansArray[i + 1])
-    //     {
-    //         ansString = ansString + numTrans[i];
-    //     }
-    //     else(ansArray[i] < ansArray[i + 1])
-    //     {
-    //         ansString = ansString + numTrans[i + 1];
-    //     }
-    // }
+    for(i = 0; i < ansArray.length; i+=2)
+    {
+        window.alert(i);
+        if(ansArray[i] > ansArray[i + 1])
+        {
+            ansString = ansString + numTrans[i];
+        }
+        else(ansArray[i] < ansArray[i + 1])
+        {
+            ansString = ansString + numTrans[i + 1];
+        }
+    }
     console.log(ansString);
     result.innerHTML = ansString;
 }
