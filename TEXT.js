@@ -470,7 +470,7 @@ function updateResult() {
         {
             ansString = ansString + numTrans[i];
         }
-        else(ansArray[i] < ansArray[i + 1])
+        else if(ansArray[i] < ansArray[i + 1])
         {
             ansString = ansString + numTrans[i + 1];
         }
