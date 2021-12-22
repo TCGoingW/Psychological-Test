@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Psychology Test
+    </title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link rel="stylesheet" href="./test-question.css">
+</head>
+
+<body>
+    <script>
+        function q1Over(){
+            $(".question1").css("display", "none");
+            $(".question2").css("display", "block");
+        }
+        function q2Over(){
+            $(".question2").css("display", "none");
+            $(".question3").css("display", "block");
+        }
+        function q3Over(){
+            $(".question3").css("display", "none");
+            $(".question4").css("display", "block");
+        }
+        function q4Over(){
+            $(".question4").css("display", "none");
+            document.getElementById("resultPicture").style.display = "block";
+            document.getElementById("btnJump").style.display = "block";
+        }
+    </script>
+    
+    <div class="question1" id="question1">
+        <h1>
+            <span>在初次見面的朋友前，我是？</span>
+        </h1>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q1a1" onclick="q1Over()">我會先向他搭話。</button>
+        </div>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q1a2" onclick="q1Over()">我通常會先等對方跟我搭話。</button>
+        </div>
+    </div>
+    
+    <div class="question2" id="question2" style="display:none">
+        <h1>
+            <span>我認為最重要的是？</span>
+        </h1>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q2a1" onclick="q2Over()">沒有現在就沒有未來可言。</button>
+        </div>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q2a2" onclick="q2Over()">不考慮未來的話根本不會進步。</button>
+        </div>
+    </div>
+
+    <div class="question3" id="question3" style="display:none">
+        <h1>
+            <span>遇到必須要拒絕的情況，我會？</span>
+        </h1>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q3a1" onclick="q3Over()">直接拒絕。</button>
+        </div>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q3a2" onclick="q3Over()">猶豫一番後妥協。</button>
+        </div>
+    </div>
+
+    <div class="question4" id="question4" style="display:none">
+        <h1>
+            <span>隔天有重要工作，你會？</span>
+        </h1>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q4a1" onclick="q4Over()">提早一天做好準備。</button>
+        </div>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q4a2" onclick="q4Over()">事情拖到最後一刻。</button>
+        </div>
+    </div>
+    
+    <div class="result">
+        <p id="resultTitle"></p>
+        <p id="resultDescription" id="change"></p>
+        <img id="resultPicture" width="600" height="400" style="display:none"> 
+        <a href="#" class="custom-btn btn-jumpToLiquid" id="btnJump" style="display:none">GO~</a>
+    </div>
+    <script src="./TEST.js"></script>
+</body>
+
+</html>
