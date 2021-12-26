@@ -1,0 +1,96 @@
+@import url('reset.css');
+
+.body {
+    background-color: #999999;
+}
+
+.no_padding {
+    padding: 0;
+}
+
+
+/* -------- Top block --------- */
+.top {
+    background-color: #f5f5f5;
+    height: 84px;
+}
+
+.top img {
+    width: 80px;
+    float: left;
+    margin-left: 100px;
+}
+
+.top ul {
+    float: right;
+    margin-right: 150px;
+}
+
+.top li {
+    float: left;
+}
+
+.top li a {
+    color: #333;
+    display: block;
+    line-height: 82px;
+    padding: 0 20px;
+}
+
+.top li a:hover{
+    color: #ff8b38;
+    border-bottom: 2px solid #ff8b38;
+}
+
+.result {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url('../img/Little\ Summer.gif');
+    background-repeat: no-repeat;
+    background-color: #cdcdcd;
+    background-position: left -100px bottom 30px;
+    background-size: 800px;
+
+}
+
+.result-text {
+    color: #4d4d4d;
+    margin-top: 100px;
+    margin-left: 750px;
+    width: 500px;
+    font-family: 'Noto Serif JP', Arial;
+}
+
+.result-text h2 {
+    font-size: 20px;
+    line-height: 0.2;
+}
+
+.result-text h1 {
+    margin-bottom: 30px;
+    font-size: 70px;
+}
+
+.result-text p {
+    margin-bottom: 30px;
+}
+
+.result-text a {
+    display: block;
+    width: 200px;
+    height: 60px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    border: 2px solid #4d4d4d;
+
+    color: #4d4d4d;
+}
+
+.result-text a:hover {
+    color: #fff;
+    background-color: #4d4d4d;
+}

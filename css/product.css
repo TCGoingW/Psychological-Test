@@ -1,0 +1,58 @@
+@import url('reset.css');
+
+.body {
+    background-image: url('../img/drink_bg.png');
+    font-family: 'Noto Serif JP', Arial;
+}
+
+.wrapper {
+
+}
+
+.product {
+    margin-top: 100px;
+}
+
+.product img {
+    float: left;
+    height: 500px;
+    margin-left: 150px;
+}
+
+.product .product_text {
+    float: right;
+    width: 400px;
+    margin-right: 300px;
+}
+
+.product_text h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.product_text p {
+    margin-bottom: 200px;
+}
+
+.product_text ul {}
+
+.product_text li {
+    float: right;
+}
+
+.product_text ul a {
+    display: block;
+    width: 160px;
+    height: 60px;
+    border: 2px solid #000;
+
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    line-height: 60px;
+}
+
+.product_text ul a:hover {
+    color: #fff;
+    background-color: #000;
+}

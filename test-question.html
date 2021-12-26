@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>
-        Psychology Test
-    </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <title>XIA WEN CING PSYCHOLOGICAL TEST</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700;900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <link rel="stylesheet" href="./test-question.css">
+    <link rel="stylesheet" href="./css/test-question.css">
 </head>
 
 <body>
@@ -25,16 +28,48 @@
         }
         function q4Over(){
             $(".question4").css("display", "none");
+            $(".question5").css("display", "block");
+        }
+        function q5Over(){
+            $(".question5").css("display", "none");
+            $(".question6").css("display", "block");
+        }
+        function q6Over(){
+            $(".question6").css("display", "none");
+            $(".question7").css("display", "block");
+        }
+        function q7Over(){
+            $(".question7").css("display", "none");
+            $(".question8").css("display", "block");
+        }
+        function q8Over(){
+            $(".question8").css("display", "none");
+            $(".question9").css("display", "block");
+        }
+        function q9Over(){
+            $(".question9").css("display", "none");
+            $(".question10").css("display", "block");
+        }
+        function q10Over(){
+            $(".question10").css("display", "none");
+            $(".question11").css("display", "block");
+        }
+        function q11Over(){
+            $(".question11").css("display", "none");
+            $(".question12").css("display", "block");
+        }
+        function q12Over(){
+            $(".question12").css("display", "none");
             document.getElementById("resultPicture").style.display = "block";
-            document.getElementById("btnJump").style.display = "block";
+            document.getElementById("result-btn").style.display = "block";
         }
     </script>
     
-    <div class="question1" id="question1">
+    <div class="question1 q_common" id="question1">
         <h1>
-            <span>在初次見面的朋友前，我是？</span>
+            <span>在初次見面的人面前，我會怎麼做？</span>
         </h1>
-        <div class="answer-choice">
+        <div class="answer-choice option1">
             <button class="custom-btn btn-choose" id="q1a1" onclick="q1Over()">我會先向他搭話。</button>
         </div>
         <div class="answer-choice">
@@ -42,11 +77,11 @@
         </div>
     </div>
     
-    <div class="question2" id="question2" style="display:none">
+    <div class="question2 q_common" id="question2" style="display:none">
         <h1>
             <span>我認為最重要的是？</span>
         </h1>
-        <div class="answer-choice">
+        <div class="answer-choice option1">
             <button class="custom-btn btn-choose" id="q2a1" onclick="q2Over()">沒有現在就沒有未來可言。</button>
         </div>
         <div class="answer-choice">
@@ -54,37 +89,137 @@
         </div>
     </div>
 
-    <div class="question3" id="question3" style="display:none">
+    <div class="question3 q_common" id="question3" style="display:none">
         <h1>
             <span>遇到必須要拒絕的情況，我會？</span>
         </h1>
-        <div class="answer-choice">
+        <div class="answer-choice option1">
             <button class="custom-btn btn-choose" id="q3a1" onclick="q3Over()">直接拒絕。</button>
         </div>
         <div class="answer-choice">
-            <button class="custom-btn btn-choose" id="q3a2" onclick="q3Over()">猶豫一番後妥協。</button>
+            <button class="custom-btn btn-choose" id="q3a2" onclick="q3Over()">猶豫一番後往往會妥協。</button>
         </div>
     </div>
 
-    <div class="question4" id="question4" style="display:none">
+    <div class="question4 q_common" id="question4" style="display:none">
         <h1>
             <span>隔天有重要工作，你會？</span>
         </h1>
-        <div class="answer-choice">
+        <div class="answer-choice option1">
             <button class="custom-btn btn-choose" id="q4a1" onclick="q4Over()">提早一天做好準備。</button>
         </div>
         <div class="answer-choice">
             <button class="custom-btn btn-choose" id="q4a2" onclick="q4Over()">事情拖到最後一刻。</button>
         </div>
     </div>
+
+    <div class="question5 q_common" id="question5" style="display:none">
+        <h1>
+            <span>週末休閒的時候我會？</span>
+        </h1>
+        <div class="answer-choice option1">
+            <button class="custom-btn btn-choose" id="q5a1" onclick="q5Over()">和朋友約出去玩！</button>
+        </div>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q5a2" onclick="q5Over()">社交力全失，享受單獨清閒時光。</button>
+        </div>
+    </div> 
+
+    <div class="question6 q_common" id="question6" style="display:none">
+        <h1>
+            <span>我在工作的時候會偏向甚麼模式？</span>
+        </h1>
+        <div class="answer-choice option1">
+            <button class="custom-btn btn-choose" id="q6a1" onclick="q6Over()">偏向遵照別人的模式做事。</button>
+        </div>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q6a2" onclick="q6Over()">偏向使用自己的方式去試試。</button>
+        </div>
+    </div> 
+
+    <div class="question7 q_common" id="question7" style="display:none">
+        <h1>
+            <span>當和某人分手時我呈現怎樣的狀況？</span>
+        </h1>
+        <div class="answer-choice option1">
+            <button class="custom-btn btn-choose" id="q7a1" onclick="q7Over()">深陷其中，很難從傷心的情緒中抽身。</button>
+        </div>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q7a2" onclick="q7Over()">雖然覺得受傷，但一旦下定決心後，我便不會再回頭眷戀過去。</button>
+        </div>
+    </div> 
+
+    <div class="question8 q_common" id="question8" style="display:none">
+        <h1>
+            <span>结束了一天行程，但朋友們突然叫我出去玩，這時候我會？</span>
+        </h1>
+        <div class="answer-choice option1">
+            <button class="custom-btn btn-choose" id="q8a1" onclick="q8Over()">這種事情不在我的計畫內，非常糾結...</button>
+        </div>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q8a2" onclick="q8Over()">當然出去阿，最喜歡隨興做事了，畢竟人生只有一次！及時行樂！</button>
+        </div>
+    </div> 
+
+    <div class="question9 q_common" id="question9" style="display:none">
+        <h1>
+            <span>朋友向我訴說委屈的事，但我覺得是朋友自己本身的錯時，我會怎麼做？</span>
+        </h1>
+        <div class="answer-choice option1">
+            <button class="custom-btn btn-choose" id="q9a1" onclick="q9Over()">直接告訴他錯誤的地方。</button>
+        </div>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q9a2" onclick="q9Over()">太直接的話怕傷到他的心，先安撫他，以後再拐彎抹角暗示。</button>
+        </div>
+    </div> 
+
+    <div class="question10 q_common" id="question10" style="display:none">
+        <h1>
+            <span>我朋友眼中的我是怎麼樣的人？</span>
+        </h1>
+        <div class="answer-choice option1">
+            <button class="custom-btn btn-choose" id="q10a1" onclick="q10Over()">很有耐心毅力的人。</button>
+        </div>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q10a2" onclick="q10Over()">有創意的人。</button>
+        </div>
+    </div> 
+
+    <div class="question11 q_common" id="question11" style="display:none">
+        <h1>
+            <span>和朋友出遊的模式為何？</span>
+        </h1>
+        <div class="answer-choice option1">
+            <button class="custom-btn btn-choose" id="q11a1" onclick="q11Over()">喜歡熱鬧的氣氛，揪越多人越好。</button>
+        </div>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q11a2" onclick="q11Over()">和少數朋友就好，加深彼此感情。</button>
+        </div>
+    </div> 
+
+    <div class="question12 q_common" id="question12" style="display:none">
+        <h1>
+            <span>總體上我是？</span>
+        </h1>
+        <div class="answer-choice option1">
+            <button class="custom-btn btn-choose" id="q12a1" onclick="q12Over()">習慣前一天計畫好，按計畫做事。</button>
+        </div>
+        <div class="answer-choice">
+            <button class="custom-btn btn-choose" id="q12a2" onclick="q12Over()">想到什麼就做什麼。</button>
+        </div>
+    </div> 
+
+
     
     <div class="result">
-        <p id="resultTitle"></p>
-        <p id="resultDescription" id="change"></p>
         <img id="resultPicture" width="600" height="400" style="display:none"> 
-        <a href="#" class="custom-btn btn-jumpToLiquid" id="btnJump" style="display:none">GO~</a>
+        <div class="result_text">
+            <p class="resultTitle" id="resultTitle" style="font-size: 60px;"></p>
+            <p class="resultDescription"id="resultDescription"></p>
+            <a href="#" class="result-btn" id="result-btn" style="display:none">去看推薦飲料</a>
+        </div>
     </div>
-    <script src="./TEST.js"></script>
+    <script src="./js/TEST.js"></script>
 </body>
 
 </html>

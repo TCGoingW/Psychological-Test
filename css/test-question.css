@@ -1,0 +1,175 @@
+body {
+    background: #cdcdcd;
+}
+h1 {
+    position: relative;
+    text-align: center;
+    color: #353535;
+    font-size: 32px;
+    font-family: 'Noto Serif JP', Arial;
+    padding: 25px;
+}
+
+p {
+    font-family: 'Noto Serif JP', Arial;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Noto Serif JP', Arial;
+    font-weight: 500;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+
+    left: 17%;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.btn-choose {
+    width: 430px;
+    height: 100px;
+    border: none;
+    color: #000;
+}
+.btn-choose:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+.btn-choose:hover {
+    color: #000;
+}
+.btn-choose:hover:after {
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.btn-choose:active {
+    top: 2px;
+}
+
+.btn-jumpToLiquid {
+    left: 10px;
+    background: #949494;
+    border: none;
+    z-index: 1;
+}
+.btn-jumpToLiquid:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+}
+.btn-jumpToLiquid:hover {
+    color: #fff;
+}
+.btn-jumpToLiquid:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn-jumpToLiquid:active {
+    top: 2px;
+}
+
+/* --------- result block ------------ */
+.result {
+    margin-top: 10px;
+}
+
+.result a {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.result img {
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.result .result_text {
+    float: right;
+    width: 400px;
+    height: 800px;
+    margin-right: 200px;
+}
+
+.result .result_text .resultTitle{
+    text-align: left;
+}
+
+.result .result_text .resultDescription{
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.result_text .result-btn {
+    font-family: 'Noto Serif JP', Arial;
+    display: block;
+    width: 160px;
+    height: 50px;
+    border: 2px solid #000;
+    text-align: center;
+    line-height: 50px;
+
+    color: #000;
+    
+}
+
+.result_text .result-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* ---------- 問題區塊共同排版 ---------- */
+.q_common {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.q_common .answer-choice{
+    width: 700px;
+    margin: 0 auto;
+}
+
+.q_common .option1 {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
