@@ -11,17 +11,26 @@
     </title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="css/product.css">
+    <script type="text/javascript">
+        function display_alert()
+          {
+          alert("產品已經被搶空囉！下次請早")
+          }
+        </script>
 </head>
 
 <body style="background-image: url('./img/drink_bg.png');">
     <div class="product">
         <img src="img/drink-ENFP.png" id="productPic"> 
         <div class="product_text">
-            <h1 id="productTitle">柳丁綠茶</h1>
-            <p id="productDescription">使用新鮮柳丁原汁 搭配上高山茶葉所濃縮出的綠茶 兩者融合 使人一口接著一口。</p>
+            <h2>柳丁綠茶</h2>
+            <h1 id="productTitle">亞洲丁黃</h1>
+            <p id="productDescription">
+                「沖天香陣透長安，滿城盡帶黃金甲」<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-黃巢《不第後賦菊詩》<br><br>
+                使用新鮮柳丁原汁，搭配上高山茶葉所濃縮出的綠茶，兩者融合，使人一口接著一口。</p>
             <ul>
                 <l1 style="float: right;"><a href="menu.html">返回總覽</a></l1>
-                <l1><a href="#">線上搶購</a></l1>
+                <l1><a href="#" onclick="display_alert()">線上搶購</a></l1>
             </ul>
         </div>
     </div>

@@ -11,19 +11,26 @@
     </title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="css/product.css">
+    <script type="text/javascript">
+        function display_alert()
+          {
+          alert("產品已經被搶空囉！下次請早")
+          }
+        </script>
 </head>
 
 <body style="background-image: url('./img/drink_bg.png');">
     <div class="product">
         <img src="img/drink-ESTJ.png" id="productPic"> 
         <div class="product_text">
+            <h2>奇異果汁</h2>
             <h1 id="productTitle">奇異博士</h1>
             <p id="productDescription">
                 「滿街楊柳綠如煙，畫出清明二月天」<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-韋莊《丙辰年鄜州遇寒食城外醉吟五首》<br><br>
                 使用新鮮奇異果搭配上氣泡水,酸甜酸甜又帶有點刺激感。</p>
             <ul>
                 <l1 style="float: right;"><a href="menu.html">返回總覽</a></l1>
-                <l1><a href="#">線上搶購</a></l1>
+                <l1><a href="#" onclick="display_alert()">線上搶購</a></l1>
             </ul>
         </div>
     </div>

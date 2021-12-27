@@ -203,13 +203,18 @@ a {
     padding-right: 100px;
 }
 
-.feature li a {
-
+.feature li a{
+    overflow: hidden;
 }
 
 .feature li img {
     width: 300px;
+    transform:scale(1,1);transition: all 0.7s ease-out; 
 }
+
+.feature img:hover {
+    transform:scale(1.1,1.1);
+} 
 
 .feature li h2 {
     font-size: 30px;

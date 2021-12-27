@@ -11,17 +11,26 @@
     </title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="css/product.css">
+    <script type="text/javascript">
+        function display_alert()
+          {
+          alert("產品已經被搶空囉！下次請早")
+          }
+        </script>
 </head>
 
 <body style="background-image: url('./img/drink_bg.png');">
     <div class="product">
         <img src="img/drink-INFJ.png" id="productPic"> 
-        <div class="product_text">
-            <h1 id="productTitle">觀音珍珠拿鐵</h1>
-            <p id="productDescription">使用台北市木柵區的鐵觀音烏龍茶葉再加入台灣小農鮮乳，喝得到濃郁的奶香，也保留了茶葉原有的香氣。</p>
+        <div class="product_text special_title">
+            <h2>觀音珍珠拿鐵</h2>
+            <h1 id="productTitle">QQ內內好喝到沒譜茶</h1>
+            <p id="productDescription">
+                「木落有情瞻北闕，霜輕無夢入西風」<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-柳開《楚南偉觀樓》<br><br>
+                使用台北市木柵區的鐵觀音烏龍茶葉再加入台灣小農鮮乳，喝得到濃郁的奶香，也保留了茶葉原有的香氣。</p>
             <ul>
                 <l1 style="float: right;"><a href="menu.html">返回總覽</a></l1>
-                <l1><a href="#">線上搶購</a></l1>
+                <l1><a href="#" onclick="display_alert()">線上搶購</a></l1>
             </ul>
         </div>
     </div>

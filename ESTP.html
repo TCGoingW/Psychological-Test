@@ -11,17 +11,26 @@
     </title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="css/product.css">
+    <script type="text/javascript">
+        function display_alert()
+          {
+          alert("產品已經被搶空囉！下次請早")
+          }
+        </script>
 </head>
 
 <body style="background-image: url('./img/drink_bg.png');">
     <div class="product">
         <img src="img/drink-ESTP.png" id="productPic"> 
         <div class="product_text">
+            <h2>草莓香草奶昔</h2>
             <h1 id="productTitle">草莓主義</h1>
-            <p id="productDescription">使用新鮮草莓搭配在地小農的牛奶 除了感受到牛奶濃郁的氣息 也能喝出草莓酸甜的滋味。</p>
+            <p id="productDescription">
+                「粉色豔日彩，舞袖拂花枝」<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-李白《邯鄲南亭觀妓》<br><br>
+                使用新鮮草莓搭配在地小農的牛奶 除了感受到牛奶濃郁的氣息 也能喝出草莓酸甜的滋味。</p>
             <ul>
                 <l1 style="float: right;"><a href="menu.html">返回總覽</a></l1>
-                <l1><a href="#">線上搶購</a></l1>
+                <l1><a href="#" onclick="display_alert()">線上搶購</a></l1>
             </ul>
         </div>
     </div>

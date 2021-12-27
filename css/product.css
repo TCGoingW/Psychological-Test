@@ -10,24 +10,32 @@
 }
 
 .product {
-    margin-top: 100px;
+    margin: 0 auto;
+    width: 1200px;
+    margin-top: 90px;
 }
 
 .product img {
     float: left;
     height: 500px;
-    margin-left: 150px;
+    margin-top: 10px;
+    margin-left: 100px;
 }
 
 .product .product_text {
+    font-family: 'Noto Serif JP', Arial;
     float: right;
-    width: 400px;
-    margin-right: 300px;
+    width: 350px;
+    margin-right: 200px;
 }
 
 .product_text h1 {
     font-size: 60px;
     margin-bottom: 50px;
+}
+
+.product_text h2 {
+    line-height: 0.4;
 }
 
 .product_text p {
@@ -55,4 +63,10 @@
 .product_text ul a:hover {
     color: #fff;
     background-color: #000;
+}
+
+
+/* -------- special situation title design --------- */
+.product .special_title p{
+    margin-bottom: 100px; 
 }

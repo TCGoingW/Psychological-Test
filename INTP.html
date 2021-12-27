@@ -11,17 +11,26 @@
     </title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="css/product.css">
+    <script type="text/javascript">
+        function display_alert()
+          {
+          alert("產品已經被搶空囉！下次請早")
+          }
+        </script>
 </head>
 
 <body style="background-image: url('./img/drink_bg.png');">
     <div class="product">
         <img src="img/drink-INTP.png" id="productPic"> 
         <div class="product_text">
+            <h2>綜合莓果果汁</h2>
             <h1 id="productTitle">莓好戀曲</h1>
-            <p id="productDescription">使用進口藍莓以及大湖草莓，喝到最新鮮的原汁。</p>
+            <p id="productDescription">
+                「縹緲危樓紫翠間，良辰樂事古難全」<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-蘇軾《浣溪沙》<br><br>
+                使用進口藍莓以及大湖草莓，喝到最新鮮的原汁。</p>
             <ul>
                 <l1 style="float: right;"><a href="menu.html">返回總覽</a></l1>
-                <l1><a href="#">線上搶購</a></l1>
+                <l1><a href="#" onclick="display_alert()">線上搶購</a></l1>
             </ul>
         </div>
     </div>

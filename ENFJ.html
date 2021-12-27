@@ -11,6 +11,12 @@
     </title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="./css/product.css">
+    <script type="text/javascript">
+        function display_alert()
+          {
+          alert("產品已經被搶空囉！下次請早")
+          }
+        </script>
 </head>
 
 <body style="background-image: url('./img/drink_bg.png');">
@@ -19,11 +25,14 @@
         <div class="product">
             <img src="img/drink-ENFJ.png" id="productPic"> 
             <div class="product_text">
+                <h2>抹茶奶蓋冰淇淋</h2>
                 <h1 id="productTitle">雪藏抹茶</h1>
-                <p id="productDescription">使用日本抹茶搭配濃郁牛奶冰淇淋 苦味之中還夾帶著濃濃的奶香味 使苦味蛻變成清爽的感覺。</p>
+                <p id="productDescription">
+                    「碧雲引風吹不斷,白花浮光凝碗面」<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-盧仝《走筆謝孟諫議寄新茶》<br><br>
+                    使用日本抹茶搭配濃郁牛奶冰淇淋，苦味之中還夾帶著濃濃的奶香味，使苦味蛻變成清爽的感覺。</p>
                 <ul>
                     <l1 style="float: right;"><a href="menu.html">返回總覽</a></l1>
-                    <l1><a href="#">線上搶購</a></l1>
+                    <l1><a href="#" onclick="display_alert()">線上搶購</a></l1>
                 </ul>
             </div>
         </div>

@@ -11,17 +11,26 @@
     </title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="css/product.css">
+    <script type="text/javascript">
+        function display_alert()
+          {
+          alert("產品已經被搶空囉！下次請早")
+          }
+        </script>
 </head>
 
 <body style="background-image: url('./img/drink_bg.png');">
     <div class="product">
         <img src="img/drink-INFP.png" id="productPic"> 
         <div class="product_text">
+            <h2>檸檬蜜氣泡飲</h2>
             <h1 id="productTitle">深海小藍龍</h1>
-            <p id="productDescription">加入了氣泡與新鮮檸檬汁，讓這杯飲料陪你度過炎炎夏日。</p>
+            <p id="productDescription">
+                「藍水遠從千澗落，玉山高並兩峰寒」<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-杜甫《九日藍田崔氏莊》<br><br>
+                加入了氣泡與新鮮檸檬汁，讓這杯飲料陪你度過炎炎夏日。</p>
             <ul>
                 <l1 style="float: right;"><a href="menu.html">返回總覽</a></l1>
-                <l1><a href="#">線上搶購</a></l1>
+                <l1><a href="#" onclick="display_alert()">線上搶購</a></l1>
             </ul>
         </div>
     </div>

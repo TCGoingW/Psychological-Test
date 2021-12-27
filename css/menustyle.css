@@ -1,5 +1,8 @@
 @import url('reset.css');
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-image: url('../img/wood_bg.jpg');
@@ -29,6 +32,10 @@ a {
 
 .no_padding {
     padding: 0;
+}
+
+.section {
+    margin-bottom: 100px;
 }
 
 
@@ -76,6 +83,7 @@ a {
 
 .menu img {
     width: 250px;
+    margin-bottom: 20px;
 }
 
 .menu ul {
@@ -87,7 +95,18 @@ a {
     display: inline-block;
     margin-right: 40px;
     text-align: center;
+
+    overflow: hidden;
 }
+
+.menu img { 
+    transform:scale(1,1);transition: all 0.7s ease-out; 
+}
+
+.menu img:hover{
+    transform:scale(1.1,1.1);
+}
+
 
 .menu h1 {
     margin-left: 50px;
@@ -97,5 +116,61 @@ a {
 
 .menu li h2 {
     color: #000;
+    font-size: 20px;
 }
 
+.menu h3 {
+    font-size: 15px;
+    color: #747474;
+    margin-bottom: 5px;
+}
+
+
+
+/* ----------- botoom bar block ---------- */
+.bottombar {
+    background-color: #354721;
+    height: 150px;
+}
+
+.bottombar-text {
+    text-align: center;
+}
+
+.bottombar-text h2 {
+    margin-top: 10px;
+}
+
+.bottombar-text h3 {
+    font-size: 10px;
+
+}
+
+.bottombar-text ul {
+    text-align: center;
+}
+
+.bottombar-text li {
+    display: inline-block;
+}
+
+.bottombar-text a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/social-media_sprite.png);
+}
+
+.bottombar-text .btn1 a { background-position: 0px 0px; }
+.bottombar-text .btn2 a { background-position: 0px -30px; }
+.bottombar-text .btn3 a { background-position: 0px -60px; }
+
+
+.bottombar-text .btn1 a:hover { background-position: -30px 0px; }
+.bottombar-text .btn2 a:hover { background-position: -30px -30px; }
+.bottombar-text .btn3 a:hover { background-position: -30px -60px; }
+
+.bottombar-text h4 {
+    font-size: 8px;
+    font-weight: lighter;
+}

@@ -11,17 +11,26 @@
     </title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="css/product.css">
+    <script type="text/javascript">
+        function display_alert()
+          {
+          alert("產品已經被搶空囉！下次請早")
+          }
+        </script>
 </head>
 
 <body style="background-image: url('./img/drink_bg.png');">
     <div class="product">
         <img src="img/drink-ESFP.png" id="productPic"> 
         <div class="product_text">
+            <h2>火龍果汁</h2>
             <h1 id="productTitle">火龍點睛</h1>
-            <p id="productDescription">使用新鮮火龍果 能夠感受到天然的微甜感 也能對身體健康有很大的影響。</p>
+            <p id="productDescription">
+                「知否，知否？應是綠肥紅瘦」<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-李清照《如夢令》<br><br>
+                使用新鮮火龍果 能夠感受到天然的微甜感 也能對身體健康有很大的影響。</p>
             <ul>
                 <l1 style="float: right;"><a href="menu.html">返回總覽</a></l1>
-                <l1><a href="#">線上搶購</a></l1>
+                <l1><a href="#" onclick="display_alert()">線上搶購</a></l1>
             </ul>
         </div>
     </div>

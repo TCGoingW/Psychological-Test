@@ -108,6 +108,8 @@ p {
 
 /* --------- result block ------------ */
 .result {
+    width: 1200px;
+    margin: 0 auto;
     margin-top: 10px;
 }
 
@@ -121,14 +123,15 @@ p {
 .result img {
     float: left;
     margin-top: 100px;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .result .result_text {
     float: right;
     width: 400px;
     height: 800px;
-    margin-right: 200px;
+    margin-right: 100px;
+    margin-top: 30px;
 }
 
 .result .result_text .resultTitle{
@@ -137,7 +140,7 @@ p {
 
 .result .result_text .resultDescription{
     text-align: left;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .result_text .result-btn {

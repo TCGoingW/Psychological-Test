@@ -11,17 +11,26 @@
     </title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="css/product.css">
+    <script type="text/javascript">
+        function display_alert()
+          {
+          alert("產品已經被搶空囉！下次請早")
+          }
+        </script>
 </head>
 
 <body style="background-image: url('./img/drink_bg.png');">
     <div class="product">
         <img src="img/drink-ISTJ.png" id="productPic"> 
         <div class="product_text">
-            <h1 id="productTitle">茉香綠茶</h1>
-            <p id="productDescription">將茉莉花和綠茶茶葉混合一起，經過多次蒸薰烘焙而成，讓茶葉吸收茉莉花香氣。氣味清香、飲後口齒留香。</p>
+            <h2>茉香綠茶</h2>
+            <h1 id="productTitle">茉非定綠</h1>
+            <p id="productDescription">
+                「紅樹青山日欲斜，長郊草色綠無涯」<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-歐陽修《豐樂亭遊春》<br><br>
+                將茉莉花和綠茶茶葉混合一起，經過多次蒸薰烘焙而成，讓茶葉吸收茉莉花香氣。氣味清香、飲後口齒留香。</p>
             <ul>
                 <l1 style="float: right;"><a href="menu.html">返回總覽</a></l1>
-                <l1><a href="#">線上搶購</a></l1>
+                <l1><a href="#" onclick="display_alert()">線上搶購</a></l1>
             </ul>
         </div>
     </div>

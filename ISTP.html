@@ -11,17 +11,26 @@
     </title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="css/product.css">
+    <script type="text/javascript">
+        function display_alert()
+          {
+          alert("產品已經被搶空囉！下次請早")
+          }
+        </script>
 </head>
 
 <body style="background-image: url('./img/drink_bg.png');">
     <div class="product">
         <img src="img/drink-ISTP.png" id="productPic"> 
         <div class="product_text">
-            <h1 id="productTitle">葡萄柚綠茶</h1>
-            <p id="productDescription">採用雲林古坑地區的新鮮葡萄柚，與綠茶做完美的結合。</p>
+            <h2>葡萄柚綠茶</h2>
+            <h1 id="productTitle">柚見背影</h1>
+            <p id="productDescription">
+                「浩思藍山玉彩寒，冰囊敲碎楚金盤」<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-薛濤《酬祝十三秀才》<br><br>
+                採用雲林古坑地區的新鮮葡萄柚，與綠茶做完美的結合。</p>
             <ul>
                 <l1 style="float: right;"><a href="menu.html">返回總覽</a></l1>
-                <l1><a href="#">線上搶購</a></l1>
+                <l1><a href="#" onclick="display_alert()">線上搶購</a></l1>
             </ul>
         </div>
     </div>

@@ -11,17 +11,26 @@
     </title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="css/product.css">
+    <script type="text/javascript">
+        function display_alert()
+          {
+          alert("產品已經被搶空囉！下次請早")
+          }
+        </script>
 </head>
 
 <body style="background-image: url('./img/drink_bg.png');">
     <div class="product">
         <img src="img/drink-ESFJ.png" id="productPic"> 
         <div class="product_text">
+            <h2>台式香檳</h2>
             <h1 id="productTitle">氣泡衝擊</h1>
-            <p id="productDescription">唯大力汽水+啤酒 搭配少許金箔 除了觀賞性很好之外 氣泡感的衝擊也是無可避免。</p>
+            <p id="productDescription">
+                「金風玉露一相逢，便勝卻人間無數」<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-秦觀 《鵲橋仙》<br><br>
+                唯大力汽水+啤酒，搭配少許金箔，除了觀賞性很好之外，氣泡感的衝擊也是無可避免。</p>
             <ul>
                 <l1 style="float: right;"><a href="menu.html">返回總覽</a></l1>
-                <l1><a href="#">線上搶購</a></l1>
+                <l1><a href="#" onclick="display_alert()">線上搶購</a></l1>
             </ul>
         </div>
     </div>
